@@ -1,0 +1,851 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - freeCodeCamp - Build a Personal Portfolio Webpage</title>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Quicksand:300,400,500,700" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  
+<style>
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+.brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.65em;
+  font-weight: 700;
+}
+
+.whitespace {
+  padding: 20px;
+}
+
+h1 {
+    font-family: Titillium Web, sans-serif;
+    font-weight: 500;
+  font-size: 2.5em;
+  }
+
+h2 {
+    font-family: Titillium Web, sans-serif;
+    font-weight: 500;
+    font-size: 1.99em;
+  }
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.jumbotron p {
+  font-weight: 400;
+  padding: 20px;
+}
+
+.blue-background {
+  background-color: #1D2463;
+  color: #fff;
+}
+
+.yellow-background {
+  background-color: #F9DC5C;
+  color: #000;
+}
+
+.purple-background {
+  background-color: #950952;
+  color: #fff;
+}
+
+.pink-background {
+  background-color: #E84855;
+  color: #000;
+}
+
+.blue {
+  color: #1D2463;
+  font-weight: 400;
+}
+
+.pink {
+  color: #E84855;
+  font-weight: 300 !important;
+  font-style: italics;
+  font-size: 1.65em !important;
+}
+
+.btn-primary {
+  background-color: #950952;
+  border: 2px solid #950952;
+}
+
+.white {
+  color: #fff;
+}
+
+.special {
+  margin-bottom: 35px;
+}
+
+.special-top {
+  margin-top: 35px;
+}
+
+.padding {
+  
+}
+
+.about .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about .col-md-3 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about .col-md-4 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.about h2 {
+  font-weight: normal;
+}
+.about .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.portfolio-divider {
+  margin: 40px 0; 
+}
+
+.portfolio-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.skills th {
+    text-align: center;
+    font-weight: 500;
+  
+    text-transform: uppercase;
+}
+
+.skills td {
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/*Footer styling*/
+
+.footer {
+  display: block;
+  padding: 15px;
+}
+
+.footer h5 {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px 0;
+ }
+
+.logo {
+  margin:0 0;
+  text-align: center;
+}
+
+.social {
+  list-style: none;
+  padding: 0 0;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer img {
+  width: 32px;
+  height: 42px;
+  margin: 0 10px;
+  padding-bottom: 10px;
+}
+</style>
+
+ 
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+ 
+ 
+ 
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand brand" href="#">ಗ್ರಾಹಕಸೇತು </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#about">Personal Profile</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+
+
+<br/>
+
+
+<br/>
+ 
+  <div class="main" ng-app="myApp">
+  <div ng-controller="mainController" ng-init="init()">
+   
+
+    <div class="row">
+      <div class="small-10 large-6 columns">
+        <input type="text" ng-model="query" placeholder="Search by name" />
+      </div>
+
+      <!-- show animal cards -->
+    
+        <li ng-animate="'animate'" ng-repeat="cat in cats=(results | filter:{gsx$name.$t: query} | filter:{gsx$personality.$t: categoryFilter} | filter:{gsx$species.$t: speciesFilter} | orderBy:orderProp | myFilter:catFilter)" class="{{classes.gsx$name.$t}}">
+ <div>
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+       
+       
+       
+       
+       
+          
+       <div class="jumbotron" id="home">
+  
+    
+      
+       
+  
+
+
+        
+
+ <div id="container">
+<div id="circle">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+    <defs>
+        <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+    </defs>
+    <circle cx="150" cy="100" r="75" fill="none"/>
+    <g>
+        <use xlink:href="#circlePath" fill="none"/>
+        <text fill="#000">
+            <textPath xlink:href="#circlePath">{{cat.gsx$name.$t}}</textPath>
+        </text>
+    </g>
+</svg>
+</div>
+</div>
+
+
+
+
+ <img class="img-responsive center-block" alt="me" img ng-src="{{cat.gsx$theimg.$t}}">
+ <h1 class="text-center">Junior Software Developer</h1>
+  <h3 class="text-center">({{ cat.gsx$personality.$t || 'N/A' }})</h3>
+  <p class="text-center">I am a versatile programmer with knowledge and interest to learn and code, who specialise in Web and Android development.</p>
+  <p class="text-center">I am a versatile ({{ cat.gsx$species.$t || 'N/A' }})programmer with knowledge and interest to learn and code, who specialise in Web and Android development.</p>
+   <p class="text-center pink" id="about">"To succeed, I believe that it is important to enjoy the work you’re doing. When developing I am happier, more engaged and I perform at the top of my game" - Fey Ijaware.</p>
+</div> 
+
+
+
+
+
+
+
+
+
+
+  <div class="container-fluid blue-background whitespace">
+  <h2 class="text-center">About Me</h2>
+    <p class="text-center">I am aspiring to be a Full Stack Web and Android Developer by the end of the year. </p>
+    <p class="text-center"> I am currently working as a Front-End Developer.</p>
+</div>
+
+ <div class="container about special-top">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="https://github.com/FeyAgape/Assets/blob/master/web.png?raw=1" alt="Web Logo" width="140" height="140">
+          <h2>Web</h2>
+          <p>My passion for Software Development started at the Co-op, when my manager gave me a website project to look at, to see what needed updating. </p>
+  <p>I ended up doing some aspect of Front End Web Development for a year. I learned on the job, but only the aspects that I needed to get the job done. </p>
+          
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="https://github.com/FeyAgape/Assets/blob/master/android.jpg?raw=1" alt="Android Logo" width="140" height="140">
+          <h2>Android</h2>
+          <p> I graduated from Android Basic Nanodegree by Google via Udacity in July, 2017, thanks to a Google scholarship I received at the start of the year in January. </p>
+  <p>In just the six months I was learning Android Development, I have created over 10 apps, and the repositories are on GitHub. </p>
+          
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="https://github.com/FeyAgape/Assets/blob/master/digital.png?raw=1" alt="Digital" width="140" height="140">
+          <h2>Digital</h2>
+           <p>From January, I took time off work to  focus on learning and developing my digital skills. I have been studying via Udacity and a variety of online schools and resources, including W3Schools, FreeCodeCamp and CodeAcademy.  </p>
+  <p>Now I am putting all these knowledge and skills into action in my new role as a Front-End Developer.</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+</div>
+    
+   
+   <div class="container-fluid yellow-background whitespace" id="skills">
+  <h2 class="text-center">Skills</h2>
+    <p class="text-center">I think what makes me competent at this languages and frameworks is that I am able to look up documentations, I utilize TDD, but most importantly I am building and developing these skills and languages every day.</p>
+     </div>
+   
+     <div class="container-fluid whitespace">
+       <div class="about">
+     <div class="row">
+        <div class="col-md-3">
+          <img class="img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/AWS.jpg?raw=1" alt="AWS Logo" width="140" height="140">
+          <h2>AWS</h2>
+          <p>I am familiar with the Amazon Web Services Route 53, S3, Lambda and DynamoDB.</p>  
+        </div>
+       
+        <div class="col-md-3">
+          <img class="img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/fb.png?raw=1" alt="Facebook Logo" width="140" height="140">
+          <h2>Facebook</h2>
+          <p>Used it in an app for login solution, using Account Kit and Facebook Login. </p>
+        </div>
+       
+        <div class="col-md-3">
+          <img class="img-rounded" src="https://github.com/FeyAgape/Assets/blob/master/draw.png?raw=1" alt="Draw Logo" width="140" height="140">
+          <h2>Adobe Draw</h2>
+  <p>Used it to create assets for my projects, using it to edit and create image assests.</p>
+        </div>
+       
+       <div class="col-md-3">
+          <img class="img-rounded" src="https://github.com/FeyAgape/Assets/blob/master/xd1.png?raw=1" alt="XD Logo" width="140" height="140">
+          <h2>Adobe XD</h2>
+  <p>Used it to create a draft design for my web and mobile application before development.</p>
+        </div>
+      </div><!-- /.row -->
+    
+     <div class="row">
+        <div class="col-md-4">
+          <img class="img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/amazon.jpg?raw=1" alt="AWS Logo" width="140" height="140">
+          <h2>Amazon</h2>
+          <p>I am familiar with the Amazon for Developer and am currently trying to build a skill for ALexa.</p>  
+        </div>
+       
+       <div class="col-md-4">
+          <img class="img-rounded" src="https://github.com/FeyAgape/Assets/blob/master/wordpress.png?raw=1" alt="Draw Logo" width="140" height="140">
+          <h2>Wordpress</h2>
+  <p>Used it to create a static website and currently using it at work.</p>
+        </div>
+       
+        <div class="col-md-4">
+          <img class="img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/pdf.png?raw=1" alt="Facebook Logo" width="140" height="140">
+          <h2>Adobe Acrobat DC</h2>
+          <p>Used it to help create and update PDF (Portable Document Format) files. </p>
+        </div>
+      </div><!-- /.row -->
+     </div>
+  </div>
+
+<div class="container about special-top special">
+      <div class="row">
+<table class="skills table table-bordered">
+  <tr>
+    <th>Experience with</th>
+    <th>Languages</th> 
+    <th>Frameworks</th>
+  </tr>
+
+  <tr>
+    <td>Version Control (Git and GitHub)</td>
+    <td>HTML (HTML5) and CSS (CSS3)</td>
+    <td>BootStrap</td>
+    </tr>
+
+    <tr>
+    <td>Command Line (Linux Server)</td>
+    <td>PHP</td>
+    <td>SASS/SCSS</td>
+    </tr>
+
+    <tr>
+    <td>Android Studio</td>
+    <td>Javascript</td>
+    <td>jQuery</td>
+    </tr>
+
+    <tr>
+    <td>CMS (Content Management Systems)</td>
+    <td>XML</td>
+    <td>ReactJS</td>
+    </tr>
+  
+    <tr>
+    <td>Google Analytics and Data Studio</td>
+     <td>Java</td>
+     <td>Jekyll</td>
+      
+     </tr>
+
+     <tr>
+    <td>Test-driven Development (TDD)</td>
+    <td>Python</td>
+    <td></td>
+  </tr>
+        </table>    
+</div>
+</div>
+  
+  
+
+ <div class="container-fluid purple-background whitespace" id="portfolio">
+  <h2 class="text-center">Portfolio</h2>
+    <p class="text-center">My projects are below and the repo for each project can be found on GitHub. </p>
+</div>
+
+<div class="container about special-top">
+      <div class="row portfolio">
+        <div class="col-md-7">
+          <h2 class="portfolio-heading">My Personal Website. <span class="text-muted">Web</span></h2>
+          <p class="lead">This is a 6 page website, which contains information about me, my resume, education, portfolio, stories, and ways to stay in touch or contact me. It was built using 84.1% HTML and 15.9% CSS.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/FeyAgape.github.io" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/website.png?raw=1" alt="My Website Screenshot">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7 col-md-push-5">
+         <h2 class="portfolio-heading">My Portfolio Webpage. <span class="text-muted">Web</span></h2>
+          <p class="lead">It's a one page personal portfolio website. It was built using 90.1% HTML and 9.9% CSS. It uses BootStrap and Jquery to make it responsive and you can access all of the portfolio webpage's content just by scrolling. It contains links to my social media account and also my projects repositories.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/freeCodeCamp---Build-a-Personal-Portfolio-Webpage" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/portfolio.png?raw=1" alt="Website screenshot">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7">
+          <h2 class="portfolio-heading">Tribute Page. <span class="text-muted">Web</span></h2>
+          <p class="lead">It's a one page Tribute site to the victims of the Manchester Attack,  to the 22 people killed at Manchester Arena at an Ariana Grande concert, on 22 May 2017. It was built using 93.6% HTML and 6.4% CSS.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/freeCodeCamp---Build-a-Tribute-Page" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/tribute.png?raw=1" alt="Website screenshot">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="portfolio-heading">Quiz App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android educational app. App includes a button for the user to submit their answers and receive a score, via a toast which accurately displays the results of the quiz. It was built using 100% Java. The app gracefully handles displaying all the content on screen when rotated and contains an if/else Control Statement.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/FactorCrazy" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="portfolio-image img-responsive center-block" src="https://feyagape.github.io/css/images/threeapp.png" alt="App image">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7">
+          <h2 class="portfolio-heading">Rugby Score Counter App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android app that track scores between two Rugby teams. It was built using 100% Java. Each score button updates the score TextView in its column by adding the correct number of points and the reset button resets the scores on both of the score TextViews.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/RugbyScoreCounter" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="portfolio-image img-responsive center-block" src="https://feyagape.github.io/css/images/twoapp.png" alt="App Image">
+        </div>
+      </div>
+      <hr class="portfolio-divider">
+   
+      <div class="row portfolio">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="portfolio-heading">ShopIt App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android inventory app, it uses SQLite database to store and present information. Built using 100% Java. App updates information based on user inputs, and creates intents to other apps using stored information. The app also includes logic to validate that no null values are accepted and no external libraries where used for core functionality.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/ShopIt" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/shopit.png?raw=1" alt="App Screenshot">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7">
+          <h2 class="portfolio-heading">Book Lister App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android app which allows users to get a list of published books on a given topic, via an HTTP request from the Google Books API, fetches results and display them to the user. It was built using 100% Java. The network call occurs off the UI thread using an AsyncTask and it populates the information parsed from the JSON response, no external libraries where used for core functionality.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/BookLister" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/booklister.png?raw=1" alt="App Image">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="portfolio-heading">Chrissi Island App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android tour guide app. It was built using 100% Java. The app presents relevant information to a user who’s intrested in visiting the Island. The app uses intents, ViewPager and Fragments, contains my own custom class and object for storing location information and uses a custom adapter to populate the layout with views based on instances of the custom class.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/Chrissi-Island" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/christi.png?raw=1" alt="App image">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7">
+           <h2 class="portfolio-heading">Ari App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android app that displays information about a small business. Built using 100% Java. App is being updated to make it fully functional and it implements Facebook SDK for Android and uses Facebook Login and Account kit.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/Ari-HairnBeauty" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/ari.png?raw=1" alt="Ari App Screenshot">
+        </div>
+      </div>
+  <hr class="portfolio-divider">
+   
+      <div class="row portfolio">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="portfolio-heading">Medication Tracker App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android habit tracking app which allows users to store and track information. Built using 100% Java. The app uses SQLite database to store and present information. The app is able to populating tables with new entries, modify the entries and display the contents of the table to users, and no Content Providers or external libraries where used for core functionality.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/Medication-Tracker" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/medication.png?raw=1" alt="App Screenshot">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7">
+          <h2 class="portfolio-heading">Breaking News App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android news feed app that connects to the Internet to provide news articles via an HTTP request and API key from the Guardian API, it uses Intents as clicking on a story opens the story in the user’s browser. Built using 100% Java. The network call occurs off the UI thread using a Loader and it populates the information parsed from the JSON response, no external libraries where used for core functionality.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/News-Feed" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/news.png?raw=1" alt="App Image">
+        </div>
+      </div>
+  </div>
+  
+   <div class="container-fluid pink-background special-top" id="contact">
+    <div class="footer">
+     <div class="row">
+       <div class="col-md-4">
+      <h5>&copy; ಗ್ರಾಹಕಸೇತು
+ 2021</h5>
+         </div>
+        <div class="col-md-8">
+
+           </div>
+  </div>
+    </div>
+  </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+      <div class="meta-info">
+        <h4>Current Adv count: {{cats.length}}</h4>
+        <div ng-show="!cats.length">
+          <h4>No celebrity animals</h4>
+        </div>
+      </div>
+      <div class="large-8 columns">
+ 
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://code.angularjs.org/1.1.5/angular.js"></script>
+<script src="https://code.angularjs.org/1.1.5/angular-animate.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.min.css">
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  
+      <script id="rendered-js" >
+var app = angular.module('myApp', []);
+
+app.filter('myFilter', function () {
+  return function (input, selectedCatCheckBox) {
+    var selectedAnimals = [];
+
+    //If none checked, show all.
+    var anyChecked = false;
+    for (var sel in selectedCatCheckBox) {
+      if (selectedCatCheckBox[sel] === true) {
+        anyChecked = true;
+      }
+    }
+    if (!anyChecked) {
+      return input;
+    }
+
+    for (var ani in input) {
+      var spec = input[ani].gsx$species.$t;
+
+      for (sel in selectedCatCheckBox) {
+        if (sel == spec && selectedCatCheckBox[sel] === true) {
+          selectedAnimals.push(input[ani]);
+        }
+      }
+
+    }
+    return selectedAnimals;
+  };
+});
+
+app.controller("mainController", function ($scope, $http, animalModel) {
+  $scope.results = [];
+  $scope.filterText = null;
+  $scope.availableCategories = [];
+  $scope.availableSpecies = [];
+  $scope.categoryFilter = null;
+  $scope.filterSpec = [];
+  $scope.filters = {};
+  $scope.setCategoryFilter = function (category) {
+    $scope.categoryFilter = category;
+  };
+  $scope.results = animalModel.init();
+  $scope.availableCategories = animalModel.getCategories();
+  $scope.availableSpecies = animalModel.getSpecies();
+});
+app.factory('animalModel', function ($http) {
+  var classes = [];
+  var availableCategories = [];
+  var availableSpecies = [];
+  var results = [];
+  var init = function () {
+    // Download the spreadsheet data and add it to the scope objects above
+    $http.jsonp('https://spreadsheets.google.com/feeds/list/1mw289Fc3qO0guxN4gmaPoeIVSA06dnp64-XqxDSHZyk/od6/public/values?alt=json-in-script' + '&callback=JSON_CALLBACK').success(function (data) {
+
+      angular.forEach(data, function (value, index) {
+        angular.forEach(value.entry, function (classes, index) {
+          results.push(classes);
+          // Building personality array
+          angular.forEach(classes.gsx$personality, function (category, index) {
+            var exists = false;
+            angular.forEach(availableCategories, function (avCat, index) {
+              if (avCat == category) {
+                exists = true;
+              }
+            });
+            if (exists === false) {
+              availableCategories.push(category);
+            }
+          });
+          // Building species array
+          angular.forEach(classes.gsx$species, function (species, index) {
+            var exists = false;
+            angular.forEach(availableSpecies, function (avSpec, index) {
+              if (avSpec == species) {
+                exists = true;
+              }
+            });
+            if (exists === false) {
+              availableSpecies.push(species);
+            }
+          });
+        });
+      });
+    }).error(function (error) {
+
+    });
+    return results;
+  };
+  var getSpecies = function () {
+    return availableSpecies;
+  };
+  var getCategories = function () {
+    return availableCategories;
+  };
+
+  return {
+    init: init,
+    getSpecies: getSpecies,
+    getCategories: getCategories };
+
+});
+//# sourceURL=pen.js
+    </script>
+
+
+
+
+<style>
+#container { margin: 0%; }
+
+#circle { position: relative; width: 100%; padding-bottom: 100%; overflow: hidden; }
+
+#circle text { font-family: 'Helvetica Neue', Arial; font-size: 16px; font-weight: bold; }
+
+#circle svg { position: absolute; left: 0; top: 0; width: 100%; height: 540px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 15s;
+     -moz-animation-duration: 15s;
+      -ms-animation-duration: 15s;
+       -o-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+</style>
+
+ </body>
+
+</html>
+  
+  
+  
+ 
