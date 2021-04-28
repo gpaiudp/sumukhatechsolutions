@@ -1,0 +1,1788 @@
+
+  <style class="INLINE_PEN_STYLESHEET_ID">
+    .toggle-box {
+  display: none;
+}
+
+.toggle-box + label {
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+
+.toggle-box + label + div {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.toggle-box:checked + label + div {
+  display: block;
+}
+
+.toggle-box + label:before {
+  background-color: #4F5150;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  content: "+";
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  text-align: center;
+  width: 20px;
+}
+
+.toggle-box:checked + label:before {
+  content: "\2212";
+}
+  </style>
+
+  
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-d8236034cc3508e70b0763f2575a8bb5850f9aea541206ce56704c013047d712.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+</head>
+
+<body>
+  
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="expires" content="0"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="refresh" content="1800"><meta name="dmca-site-verification" content="SmJ1UWJ3UGU5dytuZ3dsY1lUY25hQT090"><title>Mangalore WhatsBazaar Shri Ganesh Stores, Surathkal</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main" ng-app="myApp">
+  <div ng-controller="mainController" ng-init="init()">
+
+
+
+
+
+ <style class="INLINE_PEN_STYLESHEET_ID">
+ 
+
+.pricebox {
+  padding: 0.5rem 1rem;
+  position: relative;
+  z-index: 0;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #232323;
+}
+.pricebox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #eee;
+  z-index: -1;
+  transform: skew(-10deg);
+  box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.pricebox__sale {
+  position: absolute;
+  transform: translate(10%, -160%);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  display: flex;
+  right: 0;
+}
+.pricebox__sale::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 10%;
+  height: 4px;
+  background: #bbb;
+  z-index: -1;
+  transform: skew(30deg);
+  transform-origin: left top;
+}
+
+.pricebox__actual {
+  padding: 0.25rem 0.5rem 0.25rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.pricebox__actual::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #eee;
+  z-index: -1;
+  transform: skew(-10deg);
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.1);
+}
+.pricebox__actual::after {
+  content: "";
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  top: 50%;
+  left: 0.25em;
+  right: 0.25em;
+  z-index: 3;
+  position: absolute;
+}
+
+.pricebox__savings {
+  padding: 0.25rem 0.5rem 0.25rem;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.pricebox__savings::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #5343fa;
+  z-index: -1;
+  transform: skew(-5deg);
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.1);
+}
+.pricebox__savings2 {
+  padding: 0.25rem 0.5rem 0.25rem;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.pricebox__savings2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f53307;
+  z-index: -1;
+  transform: skew(-5deg);
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.1);
+}
+.icon {
+  display: inline-flex;
+  background: #eee;
+  color: #09024f;
+  border-radius: 50%;
+  padding: 0.15rem;
+  font-size: 65%;
+  margin-right: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  width: 1em;
+}
+  </style>
+
+  
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-d8236034cc3508e70b0763f2575a8bb5850f9aea541206ce56704c013047d712.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+</head>
+
+<body>
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <style>
+        label { display: inline-block }
+label > input { /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img { /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img { /* (RADIO CHECKED) IMAGE STYLES */
+  border:20px solid #f00;
+}
+    </style>
+    <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
+
+  
+    <script type="text/javascript">
+        
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 3 BACKGROUND IMAGE<div id="background"></div> -->
+
+  <div id="background"></div>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script id="rendered-js">
+$.get('https://spreadsheets.google.com/feeds/list/1p4iksNcxiyb-RGGkPEzpdN2nJICrOfg-La0uB7lDlHE/2/public/values?alt=json', function (data) {
+console.log(data);
+var blogs = data.feed.entry;
+$(blogs).each(function () {
+    var background = this.gsx$background.$t;
+    console.log(this);
+$('#background').append(
+    '<div class="post"><div class="video">' + background + '</div></div>');
+  });
+});
+    </script>
+
+  
+<!-- 4 OVERLAY TITLE <div id="category"></div> -->
+      <script id="rendered-js">
+$.get('https://spreadsheets.google.com/feeds/list/1p4iksNcxiyb-RGGkPEzpdN2nJICrOfg-La0uB7lDlHE/2/public/values?alt=json', function (data) {
+
+  console.log(data);
+
+  var blogs = data.feed.entry;
+
+  $(blogs).each(function () {
+    var title = this.gsx$title.$t;
+    var blog = this.gsx$blog.$t;
+    var category = this.gsx$category.$t;
+    var video = this.gsx$video.$t;
+    console.log(this);
+
+
+    $('#category').append(
+    '<div class="post"><div class="video">' + category + '</div></div>');
+  });
+  
+   
+
+});
+    </script>
+
+
+ 
+ 
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-d8236034cc3508e70b0763f2575a8bb5850f9aea541206ce56704c013047d712.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+</head>
+
+<body>
+  <header>
+  <div class="content">
+    <hgroup>
+      <h31> <div id="category"></div></h31>
+    </hgroup>
+  </div>
+  <div class="overlay"></div>
+</header>
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">var submitted=false;</script>
+<iframe id="hidden_iframe" name="hidden_iframe"  style="display: none;"></iframe>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSc2I6Pp6EtjeeuduMUVAhPrNHbJY98qQwOCQ19l-y1X373gMg/formResponse" method="post" onsubmit="submitted=true;" target="hidden_iframe">   
+
+
+
+<!-- GROUP SHOP STARTS -->
+ 
+
+
+<style>
+li > div,
+div.filter {
+  border: #cdcdcd 1px solid;
+  padding: 1em;
+}
+
+div.main h1 {
+  padding-left: 1em;
+}
+
+nav.top-bar {
+  margin-bottom: 2em;
+}
+
+img {
+  x-max1-width: 250px;
+}
+
+div.checkBoxFilter,
+.meta-info {
+  border: 1px dashed #cdcdcd;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+img.two {
+  height: 250px;
+  width: 100%;
+}
+</style>
+
+   
+
+
+    <div class="row">
+      <div class="small-10 large-6 columns">
+        <input type="text" ng-model="query" placeholder="Search by Item" />
+      </div>
+      <div class="small-10 large-3 columns">
+        <select ng-model="categoryFilter" ng-options="cat for cat in availableCategories">
+          <option value="">Filter by Veg/Non Veg</option>
+        </select>
+      </div>
+      <div class="small-10 large-3 columns">
+        <select ng-model="category1Filter" ng-options="spec for spec in availableCategory1">
+          <option value="">Filter by Category</option>
+        </select>
+      </div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style type="text/css">
+.fa_custom1 {
+color: #0099CC
+}
+.fa_custom2 {
+color: #f71a0a
+}
+.shopname {
+  text-align: center;
+  font-size: 200%;
+  color: red;
+}
+</style>
+
+
+      <!-- show animal cards -->
+      <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+        <li ng-animate="'animate'" ng-repeat="cat in cats=(results | filter:{gsx$keyword.$t: query} | filter:{gsx$areaward.$t: categoryFilter} | filter:{gsx$category1.$t: category1Filter} | orderBy:orderProp | myFilter:catFilter)" class="{{classes.gsx$keyword.$t}}">
+
+
+          <div>
+          
+         
+
+
+<!-- PRODUCT NAME STRT -->
+<div class="shopname">{{cat.gsx$shopname.$t}}
+
+<input class="toggle-box" id="{{ cat.gsx$productid.$t || 'N/A' }}" type="checkbox"><label for="{{ cat.gsx$productid.$t || 'N/A' }}"></label>
+<div>
+<input type="hidden" id="custId" name="entry.125967480" value="{{ cat.gsx$productid.$t || 'N/A' }}">       
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="/A1" >
+<input type="hidden" id="custId" name="entry.125967480" value="{{ cat.gsx$shopname.$t || 'N/A' }}">
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="A2" >
+<input type="text" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" placeholder="Update Name" >
+</div></div>
+<!-- PRODUCT NAME END --> 
+
+<!-- PRODUCT IMAGE STRT -->
+<a href="{{cat.gsx$urllink.$t}}"><img class="two" ng-src="{{cat.gsx$theimg.$t}}" /></a>
+<input class="toggle-box" id="{{ cat.gsx$idntf2.$t || 'N/A' }}" type="checkbox"><label for="{{ cat.gsx$idntf2.$t || 'N/A' }}">Image change</label>
+<div>
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="/G1" >
+<input type="hidden" id="custId" name="entry.125967480" value="{{ cat.gsx$theimg.$t || 'N/A' }}">
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="G2" >
+<input type="text" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" placeholder="Update Image" >
+</div>            
+<!-- PRODUCT IMAGE END -->            
+            
+<!-- PRODUCT DESCRIPTION STRT -->            
+<br> {{ cat.gsx$address.$t || 'N/A' }}
+<input class="toggle-box" id="{{ cat.gsx$idntf3.$t || 'N/A' }}" type="checkbox"><label for="{{ cat.gsx$idntf3.$t || 'N/A' }}"></label>
+<div>
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="/B1" >
+<input type="hidden" id="custId" name="entry.125967480" value="{{ cat.gsx$address.$t || 'N/A' }}">
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="B2" >
+<input type="text" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" placeholder="Update Itm desc" >
+</div>   
+<!-- PRODUCT DESCRIPTION END -->
+
+<!-- PRODUCT KEYWORD STRT -->
+<textarea id="searchValue211"  style="display: none;" display: none;>{{ cat.gsx$keyword.$t || 'N/A' }}</textarea>
+<!-- PRODUCT KEYWORD END -->
+
+<!-- PRODUCT CATEGORY STRT -->
+<br><br> {{ cat.gsx$category1.$t || 'N/A' }}({{ cat.gsx$areaward.$t || 'N/A' }})
+<input class="toggle-box" id="{{ cat.gsx$idntf4.$t || 'N/A' }}" type="checkbox"><label for="{{ cat.gsx$idntf4.$t || 'N/A' }}"></label>
+<div>            
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="/C1" >
+<input type="hidden" id="custId" name="entry.125967480" value="{{ cat.gsx$category1.$t || 'N/A' }}">
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="C2" >
+<input type="text" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" placeholder="Update Category" >
+</div>             
+<!-- PRODUCT CATEGORY END -->
+
+
+<!-- PRODUCT VEG/NONVEG STRT -->
+
+<input class="toggle-box" id="{{ cat.gsx$idntf5.$t || 'N/A' }}" type="checkbox"><label for="{{ cat.gsx$idntf5.$t || 'N/A' }}"></label>
+<div>            
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="/D1" >
+<input type="hidden" id="custId" name="entry.125967480" value="{{ cat.gsx$areaward.$t || 'N/A' }}">
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="D2" >
+<input type="text" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" placeholder="Update Veg/NonVeg" >
+</div>             
+<!-- PRODUCT VEG/NONVEG END -->
+
+
+<!-- PRODUCT RATE STRT -->
+<br><br> <span class="pricebox__savings"><small class="icon"><i class="fas fa-rupee-sign"></i></small>{{ cat.gsx$itemrate.$t || 'N/A' }}</span>
+<br><br><input class="toggle-box" id="{{ cat.gsx$idntf6.$t || 'N/A' }}" type="checkbox"><label for="{{ cat.gsx$idntf6.$t || 'N/A' }}"></label>
+<div>            
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="/F1" >
+<input type="hidden" id="custId" name="entry.125967480" value="{{ cat.gsx$itemrate.$t || 'N/A' }}">
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="F2" >
+<input type="text" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" placeholder="Update RATE" >
+</div>             
+<!-- PRODUCT RATE END -->            
+            
+<!-- FA FA ONCLICK JAVASCRIPT -->             
+<a onclick="{{cat.gsx$itmqtyrate2.$t}}" style="padding-top:0px;" class="mitem is-success is-pulled-right"><i class="fa fa-plus-square fa_custom fa-2x"> </i></a>
+<br><br>            
+<!-- FA FA ONCLICK JAVASCRIPT -->             
+
+<!-- PRODUCT QTY STRT -->
+<br><br> <span class="pricebox__savings2"><small class="icon">QTY</i></small>{{ cat.gsx$qty.$t || 'N/A' }}</span>
+<br><br><input class="toggle-box" id="{{ cat.gsx$idntf7.$t || 'N/A' }}" type="checkbox"><label for="{{ cat.gsx$idntf7.$t || 'N/A' }}"></label>
+<div>            
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="/E1" >
+<input type="hidden" id="custId" name="entry.125967480" value="{{ cat.gsx$qty.$t || 'N/A' }}">
+<input type="hidden" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" value="E2" >
+<input type="text" id="fname" name="{{ cat.gsx$input.$t || 'N/A' }}" placeholder="Update STOCK" >
+</div>             
+<!-- PRODUCT QTY END --> 
+
+
+
+
+      
+   
+    
+</div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </div>
+        </li>
+      </ul>
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="meta-info">
+        <h4> {{cats.length}} ITEMS</h4>
+        <div ng-show="!cats.length">
+          <h4> </h4>
+        </div>
+      </div>
+      <div class="large-8 columns">
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://code.angularjs.org/1.1.5/angular.js"></script>
+<script src="https://code.angularjs.org/1.1.5/angular-animate.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.min.css">
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  
+  
+      <script id="rendered-js" >
+var app = angular.module('myApp', []);
+
+app.filter('myFilter', function () {
+  return function (input, selectedCatCheckBox) {
+    var selectedAnimals = [];
+
+    //If none checked, show all.
+    var anyChecked = false;
+    for (var sel in selectedCatCheckBox) {
+      if (selectedCatCheckBox[sel] === true) {
+        anyChecked = true;
+      }
+    }
+    if (!anyChecked) {
+      return input;
+    }
+
+    for (var ani in input) {
+      var spec = input[ani].gsx$category1.$t;
+
+      for (sel in selectedCatCheckBox) {
+        if (sel == spec && selectedCatCheckBox[sel] === true) {
+          selectedAnimals.push(input[ani]);
+        }
+      }
+
+    }
+    return selectedAnimals;
+  };
+});
+
+app.controller("mainController", function ($scope, $http, animalModel) {
+  $scope.results = [];
+  $scope.filterText = null;
+  $scope.availableCategories = [];
+  $scope.availableCategory1 = [];
+  $scope.categoryFilter = null;
+  $scope.filterSpec = [];
+  $scope.filters = {};
+  $scope.setCategoryFilter = function (category) {
+    $scope.categoryFilter = category;
+  };
+  $scope.results = animalModel.init();
+  $scope.availableCategories = animalModel.getCategories();
+  $scope.availableCategory1 = animalModel.getCategory1();
+});
+app.factory('animalModel', function ($http) {
+  var classes = [];
+  var availableCategories = [];
+  var availableCategory1 = [];
+  var results = [];
+  var init = function () {
+    // Download the spreadsheet data and add it to the scope objects above
+    $http.jsonp('https://spreadsheets.google.com/feeds/list/1p4iksNcxiyb-RGGkPEzpdN2nJICrOfg-La0uB7lDlHE/od6/public/values?alt=json-in-script' + '&callback=JSON_CALLBACK').success(function (data) {
+
+      angular.forEach(data, function (value, index) {
+        angular.forEach(value.entry, function (classes, index) {
+          results.push(classes);
+          // Building personality array
+          angular.forEach(classes.gsx$areaward, function (category, index) {
+            var exists = false;
+            angular.forEach(availableCategories, function (avCat, index) {
+              if (avCat == category) {
+                exists = true;
+              }
+            });
+            if (exists === false) {
+              availableCategories.push(category);
+            }
+          });
+          // Building category1 array
+          angular.forEach(classes.gsx$category1, function (category1, index) {
+            var exists = false;
+            angular.forEach(availableCategory1, function (avSpec, index) {
+              if (avSpec == category1) {
+                exists = true;
+              }
+            });
+            if (exists === false) {
+              availableCategory1.push(category1);
+            }
+          });
+        });
+      });
+    }).error(function (error) {
+
+    });
+    return results;
+  };
+  var getCategory1 = function () {
+    return availableCategory1;
+  };
+  var getCategories = function () {
+    return availableCategories;
+  };
+
+  return {
+    init: init,
+    getCategory1: getCategory1,
+    getCategories: getCategories };
+
+});
+//# sourceURL=pen.js
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script id="rendered-js" >
+$.get('https://spreadsheets.google.com/feeds/list/192hqk6LZ3s5JwkNCeV9NTb50xdpP-V-hJn6Wd-Ss-4I/od6/public/values?alt=json', function (data) {
+
+  console.log(data);
+
+  var blogs = data.feed.entry;
+
+  $(blogs).each(function () {
+    var title = this.gsx$title.$t;
+    var blog = this.gsx$blog.$t;
+    var category = this.gsx$category.$t;
+    var video = this.gsx$video.$t;
+    console.log(this);
+
+
+    $('#result21').append(
+    '<div class="post"><div class="video">' + video + '</div></div>');
+  });
+
+});
+//# sourceURL=pen.js
+    </script>
+
+
+<!-- GROUP SHOP CLOSES -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+
+</style>
+
+<link rel="dns-prefetch" href="//use.fontawesome.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+<!-- script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script defer="" src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<noscript><p>Please enable JavaScript in your browser for use of the website.</p></noscript>
+
+
+  
+
+
+
+<script>
+var view0 = 'W3siVmdyeiI6IkNidW4iLCJQbmdydGJlbCI6Ik9lcm54c25mZyIsIlBuY2d2YmEiOiI1MCB0emYiLCJWZ3J6VnpudHJIRVkiOiJVZ2djZjpcL1wvdi5hcWdpdnp0LnBielwvdlwvMjAxNy0wOFwvb2Vy';
+
+var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+//$("#wohref").prop('disabled', true);
+var waddr = "";
+var cartM = "";
+var cartV = 0;
+var minV = 40 || 0;
+var catArray = [];
+var payMode = 'Show Note';
+var payNote = ' ';
+var lang = 'en';
+var perC = "5%";
+perC = cleanP(perC);
+
+function cleanP(perC2){
+if (perC2.indexOf("%") > -1) {
+	perC2.replace("%","").replace(" ", "");
+    return 1+(parseFloat(perC2)/100);
+} else {return 1;}
+}
+
+var amtPayable = 0;
+var delC = 0;
+
+var blurred = false;
+window.onblur = function() { blurred = true; }
+
+function ifAt(){
+    if(cartArray.length<1){
+        location.reload(true);
+        console.log('refreshed');
+    }
+}
+
+function checkPageFocus() {
+if (document.hasFocus()) {
+var now = new Date().getTime();
+try {
+    var last = localStorage.getItem('wolastupdate');
+} catch (e) {
+    window.onfocus = function() { blurred && (ifAt()); }
+}
+//alert(last);
+if (last == null){
+    localStorage.setItem('wolastupdate', now);
+    last = now;
+}
+if (last) {
+  var diff = now - last;
+  var mins = Math.floor(diff / 60000);
+  console.log(mins);
+  if (mins > 60){
+  	//alert('Click to refresh');
+  	$("html").addClass("is-clipped");
+  	$("#modal").addClass("is-active");
+  	$("#modalcontent").html('<center><img src = "https://cdnjs.cloudflare.com/ajax/libs/galleriffic/2.0.1/css/loader.gif" alt="Loading"></center>');
+  	$("#worefresh").text('Click for new order');
+  	$("#worefresh").show();
+  	location.reload(true);
+    localStorage.setItem('wolastupdate', now);
+  }else{
+    //alert('save');  
+    localStorage.setItem('wolastupdate', now);
+  }
+}
+} // document has focus
+} setInterval(checkPageFocus, 1000);
+
+function toTitle(str) {
+    return str.replace(/(?:^|\s)\w/g, function(match) {
+        return match.toUpperCase();
+    });
+}
+
+function urlencode(str) {
+  str = (str + '')
+  return encodeURIComponent(str)
+    .replace(/!/g, '%21')
+    .replace(/'/g, '%27')
+    .replace(/\(/g, '%28')
+    .replace(/\)/g, '%29')
+    .replace(/\*/g, '%2A')
+    .replace(/~/g, '%7E')
+    .replace(/%20/g, '+')
+} // end of urlencode
+
+function showStext(){
+    $("input#wosearch").val('');
+    $("li.woitemimage").show();
+    $("#catList").toggle();
+    $("#wosearchdiv").toggle();
+    $("#items .title").toggle();
+    $("input#wosearch").focus();
+}
+
+function checkIt(){
+    //alert(cartV);
+    if('yes' == 'no'){
+        //shop closed
+        notifyC("Please note the shop is closed", "info");
+    }
+    if(cartV < minV && (!document.getElementById('wopic').checked)){
+        // minimum order value
+        notifyC("Minimum order value is "+minV, "warning");
+        return false;   
+    }
+    if((waddr.trim() !== "")&&(cartArray.length>0)){
+        $("#wohref").addClass("is-loading");
+        $("#worefresh").show();
+        return true;
+    } else {
+        if(cartArray.length<1){
+            //check cart
+        notifyC("Please check cart", "warning");
+        return false;
+        } else if (waddr.trim() === ""){
+            //check address
+        notifyC("Please complete your details", "warning");
+        return false;            
+        }
+    }
+}
+
+$(document).ready(function(){
+    try {
+    if (localStorage.woaddress1) {
+        waddr = JSON.parse(localStorage.woaddress1);
+        document.getElementById('woname').value = waddr.name;
+        document.getElementById('womobile').value = waddr.contact;
+        document.getElementById('woaddress').value = waddr.addr1;
+        document.getElementById('wolandmark').value = waddr.addr2;
+        updateWOaddress();
+        //waddr = buildAddr(waddr);
+    }
+    } catch (error) {
+        console.error(error);
+    }
+    
+   var request = new XMLHttpRequest();
+   var params = "wohelp="+urlencode(view0);
+   request.open("POST", "wohelper.php", true);
+   request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+   request.onreadystatechange = function() {
+        if(this.readyState === 4 && this.status === 200) {
+            if(this.responseText.includes("Oops!")){
+                alert(this.responseText);
+            }
+            loadCatalog(JSON.parse(this.responseText));
+        }
+   };
+   request.send(params);    
+
+function loadCatalog(view){    
+    $.each(view, function (index) {
+    var categ = view[index].Category;
+    if ($.inArray(categ, catArray) == -1) {
+        catArray.push(categ);
+    }
+    });
+    var $catTab = $("#catList");
+    $.each(catArray, function (i) {
+    $catTab.append('<li><a href="#' + catArray[i].replace(/\s+/g,"-") + '">' + catArray[i] + '</a></li>');
+    });
+    
+    var gview = view.reduce(function(result, current) {
+    result[current.Category] = result[current.Category] || [];
+    result[current.Category].push(current);
+    return result;
+    }, {});
+    //console.log(JSON.stringify(gview));
+    //alert(gview.Breakfast[0].Item);
+    
+    var gmenu = "";
+    var suf = "";
+	$.each(gview, function(gindex) {
+	    gmenu += '<h3 style="margin-top:5px;" class="title is-5"  name="entry.7746506801" id='+ gindex.replace(/\s+/g,"-") +'>' + gindex + '</h3>';
+	    $.each(gview[gindex], function(ggindex) {
+		    //console.log(this.Item);
+		    if((this.Available).trim().toLowerCase()=="yes"){
+            var veg = (this.Veg).trim().toLowerCase();
+            if(veg==="yes"){
+            //suf="<img src='https://img.icons8.com/color/16/000000/vegetarian-food-symbol.png'>";
+            suf='<span style="font-size:1.1em;color:#439547;">&#9679</span>';
+            } else if(veg==="no"){
+            //suf="<img src='https://img.icons8.com/color/16/000000/non-vegetarian-food-symbol.png'>";
+            suf='<span style="font-size:1.1em;color:#BF360C;">&#9679</span>';
+            } else {
+            suf = "";
+            }
+		    gmenu += '<li class="box is-marginless woitemimage" style="background-image: url('+this.ItemImageURL+'); margin-top:1px !important;" data-item='+toTitle(this.Item)+' data-price='+this.Price+'>'+(this.Item.includes("::")?'<a onClick="javascript:customBox(\''+toTitle(this.Item)+'\', 1, '+this.Price.replace(/,/g, "")+');" style="padding-top:0px;" name="entry.7746506801" class="mitem is-success is-pulled-right" ><i style="color:var(--wotheme);" class="fas fa-2x fa-plus-square"></i></a>':'<a onClick="javascript:updateC(\''+toTitle(this.Item)+'\', 1, '+this.Price.replace(/,/g, "")+');" style="padding-top:0px;" class="mitem is-success is-pulled-right"><i style="color:var(--wotheme);" class="far fa-2x fa-plus-square"></i></a>')+'<span class="is-pulled-right" style="padding-right:15px;padding-top:4px;"><span class="is-size-7 has-text-grey-light">INR</span> '+this.Price+'  </span><div style="padding-left:2px;"><b>'+suf+''+toTitle(this.Item.includes("::")?this.Item.substring(0, this.Item.indexOf("::")):this.Item)+'</b><br/><small>'+this.Caption+'</small></div></li>';
+		    }
+	    });
+	});
+    //console.log(gmenu);
+    document.getElementById("items").innerHTML = gmenu;
+    $("#wohref").removeClass("is-loading");
+
+    $('.woitemimage a').click(function(event){
+       event.stopPropagation();
+    });    
+    
+     $(".woitemimage").click(function() {
+     var bg = $(this).css('background-image');
+     bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+     //alert(bg);
+     //if(/(jpg|gif|jpeg|png|google)$/.test(bg)){
+     if(!bg.includes("sumukhatechsolutions.com")){     
+        $("html").addClass("is-clipped");
+        $("#modal").addClass("is-active");
+        $("#modalcontent").html('<center><img src = "'+bg+'" alt="Image"></center>');
+     }
+     });    
+    
+} // end of loadcatalog
+
+$("#worefresh").hide();
+$("#worefresh").click(function(){
+  $("#worefresh").hide();
+  location.reload(true);
+}); // toggle click to refresh
+
+ jQuery.expr[':'].icontains = function(a, i, m) {
+  return jQuery(a).text().toUpperCase()
+      .indexOf(m[3].toUpperCase()) >= 0;
+ };
+
+$("input#wosearch").keyup(function(){
+  $("li.woitemimage").show();
+  if((this.value).trim() !== ""){
+  $("li.woitemimage:not(:icontains("+this.value+"))").hide();
+  if($('#items li:visible').length == 0){
+    notifyC("0 items", "warning");
+  }
+  }
+}); 
+     
+     $(".modal-close").click(function() {
+     $("html").removeClass("is-clipped");
+     $(this).parent().removeClass("is-active");
+     });
+     
+     $(".modal-background").click(function() {
+     $("html").removeClass("is-clipped");
+     $(this).parent().removeClass("is-active");
+     });
+
+}); // end of document ready
+    
+</script>
+
+<!-- script id="item-template" type="text/x-handlebars-template">
+<ul style="list-style-type:none;">
+	{{#each this}}
+		<li class="box is-marginless"><b>{{Item}} </b><span style="padding-top:0px;" class="button is-success is-outlined is-pulled-right" >Add</span><span class="is-pulled-right"  style="padding-right:20px;"><span class="is-size-7 has-text-grey-light" >INR</span> {{Price}}  </span></li>
+	{{/each}}
+</ul>
+</script -->
+
+<style>
+html{scroll-behavior: smooth;}
+:root { --wotheme:#23D160; /*#23D160;*/ }
+.button.is-success,  .button.is-success:hover,  .button.is-success:active,  .button.is-success:visited {
+    background-color: var(--wotheme) !important;
+}
+.section{padding:2rem 1.5rem;}
+.box{border:1px solid #dfe1e5;border-radius:8px;box-shadow:none;padding:1.2rem;}
+.woitemimage { background-repeat: no-repeat;background-position:5px; background-size:48px auto;padding-left:58px; }
+.demonote{min-width:300px;margin-left:-150px;position:fixed;z-index:11;left:50%;top:100px;}
+#worefresh{min-width:150px;margin-left:-75px;position:fixed;z-index:1;left:50%;bottom:70px;}
+.wopicdelradio{position:absolute;visibility:hidden;display:none}.rlabel{color:#d4d4d4;display:inline-block;cursor:pointer;font-weight:700;padding:10px 15px}input[type=radio]:checked+label{color:#fff;background:var(--wotheme);}label+input[type=radio]+label{border-left:solid 2px var(--wotheme);}.radio-group{border:solid 2px var(--wotheme); display:inline-block;margin:20px 0px;border-radius:10px;overflow:hidden}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield}
+.wohide {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+}
+.noshow {display: none;}
+</style>
+
+</head><body style="background-color:#f6f6f6;">
+<div id="footsum" class="card"  name="entry.7746506801" style="min-width: 100%; z-index: 15; padding: 10px 30px; position: fixed; bottom: 0px; display: none;">
+  <div id="wofootsum"  name="entry.7746506801" class="is-pulled-left" style="margin-top: calc(.300em - 1px);"><span class="tag is-rounded is-light is-size-6 has-text-weight-bold">1</span> · <small class="is-size-7 has-text-grey">INR 52.50</small></div><div class="is-pulled-right" ><a href="#woorderbox" class="button is-success" ><svg class="svg-inline--fa fa-shopping-cart fa-w-18 has-text-white" aria-hidden="true" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg><!-- <i class="has-text-white fas fa-shopping-cart" ></i> --></a></div>
+</div>    
+
+
+<script>
+function ispickup(){
+  let x = document.getElementById('wopic').checked;
+  document.getElementById('woaddress').disabled = x;
+  document.getElementById('wolandmark').disabled = x;
+  updateC();
+}
+function buildAddr(waddr){
+   return waddr.name+'%0A'+waddr.contact+(document.getElementById('wopic').checked ? "" :'%0A'+waddr.addr1+'%0A'+waddr.addr2);
+}
+
+function updateWOaddress(){
+waddr = '';
+var errC = 0;
+var inputs = document.getElementsByClassName('woaddr');
+//(!/\D/.test(inputs[1].value)) && notifyC("Only numbers in contact.", "warning");
+for (var i = 0; i < inputs.length-1; i += 1) {
+    if(!inputs[i].disabled){
+    	if(!inputs[i].value.trim()){
+         errC += 1;
+        }
+    }
+}
+if (errC > 0) {
+  //notifyC("Please complete your details", "warning");
+  return;
+}
+waddr = {
+"name" : inputs[0].value,
+"contact" : inputs[1].value,
+"addr1" : inputs[2].value,
+"addr2" : inputs[3].value
+};
+try {
+localStorage.woaddress1 = JSON.stringify(waddr);
+} catch (error) {
+    console.log(error);    
+}
+waddr = buildAddr(waddr);
+updateC();
+
+} // end of updateWOaddress
+
+
+/*    
+var fixmeTop = $('.fixme').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+        $('.fixme').css({
+            position: 'fixed',
+            top: '0',
+            width: 'inherit'
+        });
+    } else {
+        $('.fixme').css({
+            position: 'static'
+        });
+    }
+});
+*/
+
+function notifyC(themsg,ntype){
+    //$("#notification").clearQueue();
+    $("#notification").finish();
+    $("#notification").html(themsg);
+    $("#notification").removeClass();
+    $("#notification").addClass("notification");
+    $("#notification").addClass("is-"+ntype);
+    $("#notification").fadeIn().delay(800).fadeOut("slow");
+}
+
+var cartArray = [];
+
+function deleteRow(arr, row) {
+   arr = arr.slice(0); // make copy
+   arr.splice(row, 1);
+   return arr;
+}
+
+// ~~~ start of custom box ~~~
+var customitem = '';
+var crate;
+function customBox(itemtext, qty, rate){
+      var custHTML = '<form>';
+      var arrSelect = itemtext.split('::');
+      var baseitem = arrSelect[0];
+      custHTML = '<h3>'+arrSelect[0] + '</h3><hr>';
+      //console.log(arrSelect.length);
+     
+      arrSelect.forEach((value, index) => {
+        if (index < 1) return;
+            if(value.search("//RDI") > -1) {
+              var arrPara = value.split('//RDI');
+              custHTML += '<h5>'+arrPara[0]+'</h5>';
+              arrPara.forEach((value1, index1) => {
+                if (index1 < 1) return;
+                var sitem = xsitem(arrPara[index1]);
+                var scost = xsnum(arrPara[index1]);
+
+                custHTML += '<input style="min-width:30px;" class="wocradio" name="entry.774650680" type="radio" data-sitem="'+sitem+'" data-scost='+scost+' id="or'+index+'" name="or'+index+'" value="'+sitem+'" onclick="custItem(\''+baseitem+'\','+rate+',\'or'+index+'\',this);" '+(index1==1?"checked":"")+' /><span style="min-width:60px;"> '+sitem+' <small class="is-size-7 has-text-grey-light" name="entry.774650680" ></small></span><br>';
+              });
+              custHTML += '<hr>';
+            } // end of OR selects
+
+            if(value.search("##CHK") > -1) {
+              var arrPara = value.split('##CHK');
+              var maxI = xsnum(arrPara[0]);
+              console.log('maxI'+maxI);
+              custHTML += '<h5>'+ xsitem(arrPara[0]) +((maxI>0)?' (Max '+ maxI +')':'')+'</h5>';
+              arrPara.forEach((value1, index1) => {
+                if (index1 < 1) return;
+                var sitem = xsitem(arrPara[index1]);
+                var scost = xsnum(arrPara[index1]);
+
+                custHTML += '<input style="min-width:30px;" class="woccheck" name="entry.774650680" type="checkbox" data-sitem="'+sitem+'" data-scost='+scost+' data-smax='+maxI+' id="and'+index+'" name="and'+index+'" value="-" onclick="custItem(\''+baseitem+'\','+rate+',\'and'+index+'\', this);"  name="entry.774650680" /><span style="min-width:300px;"> '+sitem+' <small class="is-size-7 has-text-grey-light" name="entry.774650680" ></small></span><br>';
+
+              });
+              custHTML += '<hr>';
+            } // end of AND selects
+       
+        });
+
+function xsitem(str){
+ if (str.indexOf("((") > -1) {
+  return str.substring(0, str.indexOf("((")).trim();
+ } else {
+  return str.trim();
+ }
+} // end of xsitem
+
+function xsnum(str){
+return str.lastIndexOf("((") > -1 ? str.substring(
+                    str.lastIndexOf("((") + 2,
+                    str.lastIndexOf("))")
+                ).trim() : 0;
+} // end of xsnum
+
+$("html").addClass("is-clipped");
+$("#modal").addClass("is-active");
+$("#modalcontent").html(custHTML + '</form><span class="level is-mobile level-left"><span><a id="addCitemCart" name="entry.774650680" ><i style="color:var(--wotheme);" class="far fa-2x fa-plus-square" name="entry.774650680" ></i></a></span><span class="has-text-grey" name="entry.774650680" >&nbsp;&nbsp;INR&nbsp;<span id="citrate" name="entry.774650680" >'+rate+'</span></span></span>');
+
+custItem(baseitem,rate,'','');
+
+document.getElementById("addCitemCart").addEventListener("click", function(){
+   $(".modal-close").click();
+   updateC(customitem, 1, crate);
+});
+
+} // ~~~ end of customBox ~~~
+
+function custItem(baseitem,rate,modid,e){
+
+if(modid!== ''){
+    var chkcnt = $('#'+modid+':checked').length;
+    var mxcnt = parseInt($('#'+modid).attr('data-smax'));
+    if ((chkcnt > mxcnt)&&(mxcnt > 0)){
+console.log('Notify limit of '+mxcnt);
+        notifyC("Max "+mxcnt, "warning");
+        e.checked=false;
+        //$('#'+modid+':last:checked').prop( "checked", false );
+        $(this).prop( "checked", false );
+        //return;
+    }
+}
+
+customitem = baseitem;
+
+$('input[type=radio].wocradio:checked').each(function() {
+    customitem += ' ['+$(this).attr("data-sitem")+']';
+    rate += parseFloat($(this).attr("data-scost"));
+});
+
+$('input[type=checkbox].woccheck:checked').each(function() {
+    customitem += ' ['+$(this).attr("data-sitem")+']';
+    rate += parseFloat($(this).attr("data-scost"));
+});
+
+crate = rate;
+document.getElementById("citrate").innerHTML= crate;
+console.log('<pre>'+customitem+'</pre><p>'+rate+'</p>');
+
+} // end of custItem
+
+
+
+function updateC(itm,qty,rte){
+
+var newA =[itm,qty,rte];
+const arrayColumn = (arr, n) => arr.map(x => x[n]);
+cartV = 0;
+cartM = "";
+var exists = false;
+
+if (itm !== undefined) {
+//console.log(newA[0]);
+// start of cartArray modify
+$.each(cartArray, function (i) {    
+ if(cartArray[i][0].toLowerCase() == newA[0].toLowerCase()){
+ 	//console.log(i);
+  cartArray[i][1] += newA[1];
+  exists = true;
+    if(cartArray[i][1]<1){
+      cartArray = deleteRow(cartArray, i);
+      return false;
+    }
+ }
+});
+
+if (!exists) {
+ 	cartArray.push(newA);
+}
+// end of cartArray modify
+}
+
+//console.log(arrayColumn(cartArray, 1).reduce((a, b) => a + b, 0)+' items');
+
+document.getElementById('wocart').innerHTML = "";
+
+$.each(cartArray, function (i) {
+if(cartArray[i][1]>0){
+document.getElementById('wocart').innerHTML += '<div class="panel-tabs is-fullhd is-size-6" style="align-items: flex-start;" > <a class="is-pulled-left has-text-black" style="border:0;" onClick="updateC(\''+ cartArray[i][0] + '\',-1,'+ cartArray[i][1] + ');" ><i class="fa fa-minus-square fa_custom2 fa-2x"  ></i></a><span style="width:200px;padding:8px 2px;">' + '<b class="tag is-medium is-light is-rounded" >'+ cartArray[i][1] + '</b> x '+ cartArray[i][0] + '</span> <a class="is-pulled-right has-text-black" style="border:0;"  onClick="updateC(\''+ cartArray[i][0] + '\',1,'+ cartArray[i][1] + ');"><i class="fa fa-plus-square fa_custom1 fa-2x"></i></a> </div><!--hr style="margin: 1rem 0;"/-->';
+//document.getElementById('wocart').innerHTML += '<a>' + cartArray[i][0] + ' '+ cartArray[i][1] + '</a><br/>';
+    cartV += (cartArray[i][1] * cartArray[i][2]);
+    cartM += ""+cartArray[i][1] + " x " + cartArray[i][0] + "\r\n";
+}
+});
+
+var cntItems = arrayColumn(cartArray, 1).reduce((a, b) => a + b, 0);
+
+if(cntItems > 0){
+var delC = cartV<200?30:0;//delC = delC.replace(/,/g, "");
+delC = parseFloat(delC);
+delC = (document.getElementById('wopic').checked ? 0 : delC);
+amtPayable = ((cartV+delC)*perC).toFixed(2);
+
+$('#footsum').show();
+document.getElementById('wofootsum').innerHTML = '<span class="tag is-rounded is-light is-size-6 has-text-weight-bold" name="entry.774650680" >'+cntItems+'</span>  <small class="is-size-7 has-text-grey" name="entry.774650680" ><i class="fas fa-rupee-sign"></i> '+amtPayable+'</small>';
+
+//console.log(Number.isInteger(perC));
+//cart total footer below
+document.getElementById('wocart').innerHTML += "<div class='is-fullhd'><hr style='margin:1rem 0;color:#e33b3b;'/><span class='has-text-weight-semibold is-pulled-left' >Subtotal</span><span class='has-text-weight-semibold is-pulled-right'>INR "+cartV.toFixed(2)+"</span><br/><span class='has-text-weight-normal is-pulled-left' >Delivery</span><span class='has-text-weight-normal is-pulled-right'>"+((delC == 0) ? '-':'INR '+delC.toFixed(2))+"</span><br/><span class='has-text-weight-bold is-pulled-left'>Payable <small class='has-text-weight-light'>(with 5% tax)</small></span><span class='has-text-weight-bold is-pulled-right'>INR "+amtPayable+"</span></div><br/><span class='has-text-grey is-size-10'></span>";
+} else {
+    // your cart is empty
+document.getElementById('wocart').innerHTML += '<p class="has-text-centered">Your cart is empty</p>';
+$('#footsum').hide();
+}
+
+    //waddr = urlencode(toTitle(waddr));
+    //console.log(waddr);
+
+upLink();
+
+// console.log(cartArray);
+// update cart
+notifyC("Cart updated", "info");
+
+} // end of updateC
+
+function thePaynote(pMode,pNote,pValue){
+    var pCur = 'INR';
+    var payN = 'Cash on delivery';
+    
+    switch(pMode) {
+        case 'Show Note':
+            payN = pNote;
+            break;
+        case 'PayPal - Me':
+            payN = 'Click to pay using PayPal%0Ahttps://paypal.me/'+pNote+'/'+pValue;
+            payN += '%0APlease share screenshot after payment.';
+            break;
+        case 'USSD - Rwanda':
+            var ussdrw = 'amt='+pValue+'&ussdid='+pNote;
+            ussdrw = escape(encodeURI(ussdrw));
+            payN = 'Click to pay using thru USSD%0Ahttps://whatsorder.com/p/ussdrw.php?'+ussdrw;
+            payN += '%0APlease share screenshot after payment.';
+            break;
+        case 'UPI - India':
+            var upivar = 'pn=Kitchen J & S&pa='+pNote+'&tn=WhatsOrder&am='+pValue+'&cu=INR';
+            //console.log(escape(encodeURI(upivar)));
+            upivar = escape(encodeURI(upivar));
+            //upivar = upivar.replace(/&/g,'%26');
+            payN = 'Click to pay using UPI%0Ahttps://whatsorder.com/p/upiin.php?'+upivar;
+            payN += '%0APlease share screenshot after payment.';
+            break;
+        case 'Payment link':
+            payN = 'Please share screenshot after payment.%0A'+pNote;
+            break;
+        case 'Append Amount to Link':
+            payN = 'Please share screenshot after payment.%0A'+ escape(encodeURI(pNote+pValue));
+            break;            
+            
+    } // end of payment mode switch
+    
+    return payN;
+}
+
+function upLink(){
+var wonote = urlencode(document.getElementById('wonote').value);
+var jstand = true;
+if(!jstand){
+    cartM = 'Trial version\nItem ABC x 2\nItem XYZ x 3';
+}
+var wlink = "https://api.whatsapp.com/send?phone=919341854164&text=New order "+(document.getElementById('wopic').checked ? '🏬📍(Pickup at Hub)' : '🏡🛵(DoorDelivery)')+" (Sumukha+Stores+Derebail)%0A(%23%208C69E)%0A%0A" + urlencode(cartM) + "%0A*Payable: INR " + amtPayable + "*%0A";
+wlink += "%0A*Customer details*%0A";
+wlink += toTitle(waddr).replace(/\x26/,"%26").replace(/\x23/,"%23");
+wlink += "%0A**"+wonote.replace(/\x26/,"%26").replace(/\x23/,"%23")+"**";
+//wlink += "%0A%0APlease confirm via reply.";
+if (wlink !== "") {
+    wlink += "%0A%0A%0A%0A"+thePaynote(payMode,payNote,amtPayable);
+}
+
+document.getElementById("wohref").setAttribute('href', wlink);
+    
+} // end of upLink
+
+</script>
+
+
+<!--script src="https://usemapmojo.com/v1/hello.js"></script-->
+
+<div id="notification" class="notification is-info" name="entry.774650680" style="position: fixed; top: 0px; width: 100%; z-index: 105; display: none;">Cart updated</div>
+
+<center><div id="worefresh" class="is-info tag is-size-6" style="display: none;">
+<a class="has-text-white" href="">Click for new order</a>
+</div></center>
+
+<footer class="footer">
+  <div class="content has-text-grey-lighter has-text-centered">
+
+
+  </div>
+</footer>
+
+<!-- modal starts -->
+<div id="modal" class="modal" style="z-index:50;">
+   <div class="modal-background"></div>
+   <div class="modal-content" name="entry.774650680">
+      <div class="box">
+            <div class="media-content" name="entry.774650680" >
+               <div id="modalcontent" class="content" name="entry.774650680">
+                 
+               </div>
+            </div>
+      </div>
+   </div>
+   <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<!-- modal ends -->
+
+
+</body>
+
+<!-- experiment-------------------------------------------------------------------------------------------googleformsheet -->
+
+
+
+     
+  
+
+
+ <!-- Firm Name-------------------------------------------------------------------------------------------start--> 
+<input type="hidden" id="custId" name="entry.774650680" value="SumukhaStores">
+
+ <!-- Firm Name-------------------------------------------------------------------------------------------close--> 
+
+  <!-- experiment test1-------------------------------------------------------------------------------------------close-->  
+    <body>
+    
+<textarea id="searchValue21" name="entry.774650680" style="visibility:hidden;" >Ganesha Bless me</textarea>
+  
+   
+  
+
+
+
+    <script type="text/javascript">//<![CDATA[
+
+
+$(document).ready(function() {
+  $('#submit').click(function() {
+    $('#searchValue21').text("order" + cartM + amtPayable);
+  })
+});
+
+
+
+  //]]></script>
+  
+    
+<!-- experiment test1-------------------------------------------------------------------------------------------close-->
+<!-- experiment test2-------------------------------------------------------------------------------------------strt-->
+
+
+
+
+
+
+
+
+
+
+<!-- experiment test1-------------------------------------------------------------------------------------------close-->
+
+<!-- experiment test2-------------------------------------------------------------------------------------------strt-->
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+<div class="column">
+<div id="addr" class="box has-background-white">
+
+
+
+
+
+<div class="radio-group ">
+  
+<label class="layersMenu"><input type="radio" id="radioZoom14" name="zoomsMBtiles" value="14" checked /></label>
+<label class="layersMenu"><input type="radio" id="radioZoom18" name="zoomsMBtiles" value="18" /></label>
+<input class="wopicdelradio" name="entry.774650680" value="Door Delivery" type="radio" id="wodel" name="selector" checked="" onclick="ispickup();" onchange="updateWOaddress();"><label class="rlabel" name="entry.774650680" for="wodel"><img src="https://mangaloreonlinebazar.neocities.org/images/delivery%20png.png" width="100" height="70">Delivery</label>
+
+<input class="wopicdelradio" name="entry.774650680" value="Pickup at Derebail Hub"  type="radio" id="wopic" name="selector" onclick="ispickup();" onchange="updateWOaddress();"><label class="rlabel" name="entry.774650680" for="wopic"><img src="https://mangaloreonlinebazar.neocities.org/images/storepickup.png" width="100" height="70">Pick-up</label>
+</div>
+
+<h2 class="subtitle" style="margin-bottom:0.5rem;">Your Details</h2>
+
+  <div class="field">
+  <label class="label is-marginless">Name</label>
+    <input class="input woaddr" name="entry.774650680" type="text" id="woname" onchange="updateWOaddress();">
+  </div>
+ 
+    <div class="field">      
+  <label class="label is-marginless">Contact Number</label>
+    <input class="input woaddr" name="entry.774650680" type="tel" id="womobile" onchange="updateWOaddress();">
+  </div>
+<div> 
+    <div class="field">      
+  <label class="label is-marginless">Address</label>
+    <input class="input woaddr" name="entry.774650680" type="text" id="woaddress" onchange="updateWOaddress();">
+  </div>
+  
+    <div class="field">      
+  <label class="label is-marginless">Landmark / Zipcode</label>
+    <input class="input woaddr" name="entry.774650680" type="text" id="wolandmark" onchange="updateWOaddress();">
+  </div>
+</div>
+</div>
+
+
+<div id="woorderbox" class="box has-background-white">
+<h2 class="subtitle">Your Order</h2>
+    <div class="tile is-parent is-vertical" style="padding:0rem;" id="wocart" name="entry.774650680" ><p class="has-text-centered">Your cart is empty</p></div> <!-- end of cart div -->
+
+<div><hr><textarea id="wonote" class="textarea" name="entry.774650680" placeholder="Note" onchange="upLink();"></textarea></div>
+
+    <div class="center">
+     <button id="submit" type="submit"   class="text-red blink-soft">Confirm your order</button>
+     
+    </div>
+<!-- submi-------------------------------------------------------------------------------------------googleformsheet -->
+
+<style>
+.container {
+  width: 75%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.text-red {
+  color: red;
+}
+
+
+.blink-soft {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+</style>
+
+ 
+ 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Assistant'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+  
+<style>
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+button[type=submit] {
+  width: 250px;
+  height: 100px;
+  background: #bfeff5;
+  border-radius: 10px;
+  will-change: transform;
+  transition: all 0.2s ease;
+  border: 2px solid #FF5126;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 26px;
+  color: #FF5126;
+  outline: none;
+  text-align: center;
+}
+button[type=submit]:hover {
+  background: #FF5126;
+  color: #ffffff;
+}
+button[type=submit]:active {
+  font-size: 25px;
+  transform: translateY(1px);
+}
+button[type=submit].active {
+  font-size: 0;
+  border-radius: 25px;
+  width: 50px;
+  background: transparent;
+}
+button[type=submit].loader {
+  border-right: 2px solid #ffffff;
+  -webkit-animation: loader 0.4s linear infinite;
+          animation: loader 0.4s linear infinite;
+}
+button[type=submit].success {
+  background: #07bff7;
+  border-color: #3BB873;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+</style>
+
+ 
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+      <script id="rendered-js" >
+$(document).ready(() => {
+  let $button = $('button[type="submit"]');
+
+  $button.on('click', function () {
+    var $this = $(this);
+    if ($this.hasClass('active') || $this.hasClass('success')) {
+      return false;
+    }
+    $this.addClass('active');
+    setTimeout(() => {
+      $this.addClass('loader');
+    }, 125);
+    setTimeout(() => {
+      $this.removeClass('loader active');
+      $this.text('Confirmed... Click Whatsapp Button');
+      $this.addClass('success animated pulse');
+    }, 3600);
+    setTimeout(() => {
+      $this.text('Go');
+      $this.removeClass('success animated pulse');
+      $this.blur();
+    }, 2900);
+  });
+});
+//# sourceURL=pen.js
+    </script>
+
+<!-- submit-------------------------------------------------------------------------------------------googleformsheet -->
+
+
+
+
+     
+     
+    </div><hr><a id="wohref" target="_blank" onclick="return checkIt();" class="button is-medium is-fullwidth is-success" href="https://api.whatsapp.com/send?phone=919341854164&amp;text=New order 🏬 (Kitchen+J+%26+S)%0A(%23%208C69E)%0A%0A%0A*Payable: INR 52.50*%0A%0A*Customer details*%0A%0A****%0A%0A-----------------------------%0A" >Send to WhatsApp</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</form>
+<br><br><br>
+<div><hr><textarea id="wonote" class="textarea" name="entry.7746506801" placeholder=" " onchange="upLink();"></textarea></div>
+
+
+
+
+
+
+
+
+
+
+
+              
